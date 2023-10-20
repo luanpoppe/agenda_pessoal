@@ -6,7 +6,6 @@ declare var createGoogleEvent: any;
   selector: 'app-main-section',
   templateUrl: './main-section.component.html',
   styleUrls: ['./main-section.component.scss'],
-  styleUrls: ['./main-section.component.scss'],
 })
 export class MainSectionComponent implements OnInit {
   constructor(private fb: FormBuilder) {}
