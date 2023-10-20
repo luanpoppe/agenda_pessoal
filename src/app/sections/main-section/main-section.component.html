@@ -1,6 +1,5 @@
 <div class="container">
   <div class="row">
-
     <div class="col-4 card bg-primary bg-gradient" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -22,5 +21,19 @@
           content.</p>
       </div>
     </div>
+  </div>
+  <div class="row">
+    <form [formGroup]="appointmentForm" (ngSubmit)="scheduleMeeting()">
+      <label for="appointmentTime">Meeting Time</label>
+      <input type="datetime-local" id="appointmentTime" formControlName="appointmentTime">
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" formControlName="email">
+      </div>
+      <br />
+      <button type="submit" id="schedule-button">Schedule Appointment</button>
+
+    </form>
   </div>
 </div>
